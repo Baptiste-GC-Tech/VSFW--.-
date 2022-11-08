@@ -40,4 +40,25 @@ def salaireNet(salaireBrut, coef):
 
 def salaireParSeconde(salaireHoraire, heureParJourOuvre, nbJourOuvreParAn):
     return (salaireHoraire * heureParJourOuvre * nbJourOuvreParAn) / 31557600
+
+
+def INPUT():
+    #POV : la fonction marche déjà (tg c magik)
+    #Renvoi un caractere de type string au hasard
+
+#Exercice :
+    #Faire un mini-jeu qui affiche un message lorsque INPUT renvoie le bon caractère
+    #Le caractère doit être paramétrable
+
+#Définir miniJeuMegaCoolEtBranche qui affiche un message victorieux si INPUT renvoi le caractère choisis au moment de lancer la fonction (c'est un paramètre qui s'appelle charChoisis)
+def miniJeuMegaCoolEtBranche(charChoisis):
+    #Appeler INPUT et stocker sa résultante dans la variable essaie
+    essaie = INPUT()
+    #Tant que essaie est différent de charChoisis
+    while essaie != charChoisis:
+        #Appeler INPUT et stocker sa résultante dans la variable essaie
+        essaie = INPUT()
+    #Affichage du message victorieux
+    print("You're Winner")
+
 #FIN
