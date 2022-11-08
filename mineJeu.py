@@ -1,5 +1,5 @@
 #Exercice :
-    #Faire un mini-jeu qui affiche un message lorsque INPUT renvoie le bon caractère
+    #Faire un mini-jeu qui affiche un message lorsque input renvoie le bon caractère
     #Le caractère doit être paramétrable
 
 #Définir miniJeuMegaCoolEtBranche qui affiche un message victorieux si INPUT renvoi le caractère choisis au moment de lancer la fonction (c'est un paramètre qui s'appelle charChoisis)
