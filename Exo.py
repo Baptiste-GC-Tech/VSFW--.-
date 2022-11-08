@@ -68,4 +68,19 @@ def miniJeuMegaCoolEtBranche(charChoisis):
     #Affichage du nombre de tentaives pour obtenir la victoire
     print("#1 Victoire Battle Royal en " + nbTentatives + " essaies B-)")
 
+tableau = [0, 10, 15, 5, 1]
+print(tableau[2]) #Affiche le 15
+len(tableau) #Renvoi 5 (la longueur du tableau)
+
+#Exercice 1 :
+    #Faire une fonction qui concatene 2 chaîne de caraftères, les séparants par une virgule
+
+#Exercice 2 :
+    #Faire une fonction qui itére sur tous les index d'un tableau renvoyant une chaîne de caractères avec l'ensemble des occurences de'un chiffre
+    #eg : Pour [0,1,1,1,0,1,1,0,1]
+    #La fonction(tableau, 0) doit renvoyer "0, 4, 7" avec la première fonction
+
+#Exercice 3 :
+    #Renvoyer / Afficher un message
+
 #FIN
