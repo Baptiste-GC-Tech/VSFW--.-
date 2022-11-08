@@ -43,6 +43,7 @@ def salaireParSeconde(salaireHoraire, heureParJourOuvre, nbJourOuvreParAn):
 
 
 def INPUT():
+    return 'a'
     #POV : la fonction marche déjà (tg c magik)
     #Renvoi un caractere de type string au hasard
 
@@ -54,11 +55,17 @@ def INPUT():
 def miniJeuMegaCoolEtBranche(charChoisis):
     #Appeler INPUT et stocker sa résultante dans la variable essaie
     essaie = INPUT()
+    #Initialiser un compteur d'essaie
+    nbTentatives = 1
     #Tant que essaie est différent de charChoisis
     while essaie != charChoisis:
         #Appeler INPUT et stocker sa résultante dans la variable essaie
         essaie = INPUT()
+        #Incrémenter le compteur de tentatives
+        nbTentatives = nbTentatives + 1
     #Affichage du message victorieux
     print("You're Winner")
+    #Affichage du nombre de tentaives pour obtenir la victoire
+    print("#1 Victoire Battle Royal en " + nbTentatives + " essaies B-)")
 
 #FIN
