@@ -68,19 +68,63 @@ def miniJeuMegaCoolEtBranche(charChoisis):
     #Affichage du nombre de tentaives pour obtenir la victoire
     print("#1 Victoire Battle Royal en " + nbTentatives + " essaies B-)")
 
-tableau = [0, 10, 15, 5, 1]
-print(tableau[2]) #Affiche le 15
-len(tableau) #Renvoi 5 (la longueur du tableau)
-
 #Exercice 1 :
     #Faire une fonction qui concatene 2 chaîne de caraftères, les séparants par une virgule
 
+#Définir la fonction concatenate(stringA, stringB) qui répond aux attentes de l'exo 1
+def concatenate(stringA, stringB):
+    #Initialiser stringifiedA à str(stringA) pour s'assurer d'avoir le bon type
+    stringifiedA = str(stringA)
+    #Initialiser stringifiedB à str(stringB) pour s'assurer d'avoir le bon type
+    stringifiedB = str(stringB)
+    #Initialiser la varibale stringFinal à la conctéantion de string1, ", " et string2
+    stringFinal = stringifiedA + ", " + stringifiedB
+    #Retourner stringFinal
+    return stringFinal
+
 #Exercice 2 :
-    #Faire une fonction qui itére sur tous les index d'un tableau renvoyant une chaîne de caractères avec l'ensemble des occurences de'un chiffre
+    #Faire une fonction qui itére sur tous les index d'un tableau renvoyant une chaîne de caractères avec l'ensemble des occurences d'un chiffre
     #eg : Pour [0,1,1,1,0,1,1,0,1]
-    #La fonction(tableau, 0) doit renvoyer "0, 4, 7" avec la première fonction
+    #La fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hésitez pas à implémenter la première fonction ;)
+
+#Définir la fonction findIndex(tab, elem) qui retourne un string comprenant tout les index où se trouve l'élément recherché
+def findIndex(tab, target):
+    #Initialiser un pointeur (int)i
+    i = 0
+    #Initialiser (string)locations vide
+    locations = ''
+    #Initialiser (boolean)firstTurn à True
+    firstTurn = True
+    #Tant que i est strictement inférieur à la taille de tab, Alors...
+    while i < len(tab):
+        #Si tab[i] est égal à target, Alors...
+        if tab[i] == target:
+            #Si firstTurn est égal à True, Alors...
+            if firstTurn == True:
+                #Assigner str(i) à locations
+                locations = str(i)
+                #Assigner firstTurn à False
+                firstTurn = False
+            #Sinon : firstTurn est différent de True, Alors...
+            else:
+                #Assigner le retour de concatenate(locations, i) à locations
+                locations = concatenate(locations, i)
+        #Incrémenter i de 1
+        i = i + 1
+    #Afficher locations
+    print(locations)
 
 #Exercice 3 :
     #Renvoyer / Afficher un message
 
+#Définir la fonction returnString(string) qui retourne un string sous forme de variable
+def returnString(string):
+    #Afficher string
+    print(string)
+    #Retourner string
+    return string
+
 #FIN
+
+tab=[0,1,1,1,0,1,1,0,1]
+findIndex(tab, 0)
