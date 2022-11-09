@@ -124,7 +124,12 @@ def returnString(string):
     #Retourner string
     return string
 
-#FIN
+#Exo bonus yay :
+    #Suite de Fibonacci en fonction d'uen valeur de départ et du nombre d'occurence (max 10)
 
-tab=[0,1,1,1,0,1,1,0,1]
-findIndex(tab, 0)
+#Définir fibo(startingValue, nbTurn) qui affiche les nbTurn première valeurs depuis startingValue avec la règle de Fibonacci
+    #Si nbTurn > 10, Alors...
+        #Gronder l'utilisateur (povre CPU smh) et lui dire qu'on en fera que 10
+        #
+
+#FIN
